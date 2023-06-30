@@ -371,7 +371,7 @@ h3 {
 
 .features__inner {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 255px), 1fr));
   gap: 4rem;
 }
 
@@ -398,7 +398,6 @@ h3 {
 
 @media (width>=40em) {
   .features__inner {
-    grid-template-columns: repeat(2, 1fr);
     gap: 4.5rem;
   }
 
@@ -413,7 +412,6 @@ h3 {
 
 @media (width>=60em) {
   .features__inner {
-    grid-template-columns: repeat(4, 1fr);
     gap: 1.875rem;
   }
 }
